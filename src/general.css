@@ -1,0 +1,33 @@
+.main_logo {
+  width: 80%;
+}
+
+.social_cont {
+  width: 100px;
+  vertical-align: middle;
+}
+.socialTag {
+  margin-top: 10px;
+  width: 30px;
+  height: 100%;
+  display: inline;
+  float: left;
+}
+
+.aboutTitle {
+  font-size: 30px;
+}
+
+.logoSmall {
+  width: 300px;
+  display: inline-block;
+}
+
+.contactInfo {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.navButton:focus {
+  outline: none;
+}
