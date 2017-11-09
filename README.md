@@ -30,7 +30,7 @@ Go to github and create a new pull request.
 
 run `git fetch [remote name] demo` to download the demo <br />
 the remote name is the ieee-ateith-sb remote repo name. <br />
-Remember that current branch has to be clean to checkout to another. See at troubleshooting how to overcome this.
+Remember that current branch has to be clean to checkout to another. See at troubleshooting how to overcome this. <br/>
 run `git checkout demo` to change to the demo branch.  <br />
 when you want to go back to master <br />
 run `git checkout master` <br />
