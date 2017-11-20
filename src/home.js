@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 
-class Home extends React.Component {
+export default class Home extends React.Component {
   render() {
     return(
       <center>
@@ -10,8 +10,4 @@ class Home extends React.Component {
       </center>
     );
   }
-}
-
-export default function printHome() {
-  return (<Home />);
 }
