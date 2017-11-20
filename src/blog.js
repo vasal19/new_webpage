@@ -12,6 +12,4 @@ class Blog extends React.Component {
   }
 }
 
-export default function printBlog() {
-  return (<Blog />);
-}
+export default <Blog />;

@@ -12,6 +12,4 @@ class Home extends React.Component {
   }
 }
 
-export default function printHome() {
-  return (<Home />);
-}
+export default <Home />;

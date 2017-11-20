@@ -12,6 +12,4 @@ class Events extends React.Component {
   }
 }
 
-export default function printEvents() {
-  return (<Events />);
-}
+export default <Events />;

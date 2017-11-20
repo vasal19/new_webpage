@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import printHome from './home.js';
-import printAbout from './about.js';
-import printEvents from './events.js';
-import printBlog from './blog.js';
-import printContact from './contact.js';
+import Home from './home.js';
+import About from './about.js';
+import Events from './events.js';
+import Blog from './blog.js';
+import Contact from './contact.js';
 
 class NavigationBar extends React.Component {
   render() {
@@ -20,11 +20,11 @@ class NavigationBar extends React.Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
-            <NavItem href="#" onClick={() => {this.props.onClick(1)}}>Home</NavItem>
-            <NavItem href="#" onClick={() => {this.props.onClick(2)}}> About</NavItem>
-            <NavItem href="#" onClick={() => {this.props.onClick(3)}}>Events</NavItem>
-            <NavItem href="#" onClick={() => {this.props.onClick(4)}}>Blog</NavItem>
-            <NavItem href="#" onClick={() => {this.props.onClick(5)}}> Contact </NavItem>
+            <NavItem onClick={() => {this.props.onClick(1)}}>Home</NavItem>
+            <NavItem onClick={() => {this.props.onClick(2)}}> About</NavItem>
+            <NavItem onClick={() => {this.props.onClick(3)}}>Events</NavItem>
+            <NavItem onClick={() => {this.props.onClick(4)}}>Blog</NavItem>
+            <NavItem onClick={() => {this.props.onClick(5)}}> Contact </NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -44,11 +44,11 @@ class Page extends React.Component {
       contact: 5
     };
     this.pages = {
-      home: printHome,
-      about: printAbout,
-      events: printEvents,
-      blog: printBlog,
-      contact: printContact
+      home: Home,
+      about: About,
+      events: Events,
+      blog: Blog,
+      contact: Contact
     };
     this.state = { contents: this.pages.home  }
   }
@@ -73,7 +73,7 @@ class Page extends React.Component {
     return (
       <div>
         <NavigationBar onClick={(index)=>{this.onPageChange(index)}}/>
-        {this.state.contents()}
+        {this.state.contents}
       </div>
     );
   }

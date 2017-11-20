@@ -12,6 +12,4 @@ class About extends React.Component {
   }
 }
 
-export default function printAbout() {
-  return (<About />);
-}
+export default <About />;

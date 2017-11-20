@@ -25,7 +25,7 @@ class Form extends React.Component {
   }
 }
 
-class ContactPanel extends React.Component {
+class Contact extends React.Component {
 
   render() {
     return(
@@ -34,6 +34,4 @@ class ContactPanel extends React.Component {
   }
 }
 
-export default function printContact() {
-  return (<ContactPanel />);
-}
+export default <Contact />;
