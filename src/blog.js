@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 
-class Blog extends React.Component {
+export default class Blog extends React.Component {
   render() {
     return(
       <center>
@@ -11,5 +11,3 @@ class Blog extends React.Component {
     );
   }
 }
-
-export default <Blog />;

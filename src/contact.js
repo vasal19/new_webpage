@@ -25,7 +25,7 @@ class Form extends React.Component {
   }
 }
 
-class Contact extends React.Component {
+export default class Contact extends React.Component {
 
   render() {
     return(
@@ -33,5 +33,3 @@ class Contact extends React.Component {
     );
   }
 }
-
-export default <Contact />;
