@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 
-class Events extends React.Component {
+export default class Events extends React.Component {
   render() {
     return(
       <center>
@@ -10,8 +10,4 @@ class Events extends React.Component {
       </center>
     );
   }
-}
-
-export default function printEvents() {
-  return (<Events />);
 }
