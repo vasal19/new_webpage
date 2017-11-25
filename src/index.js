@@ -8,6 +8,8 @@ import About from './about.js';
 import Events from './events.js';
 import Blog from './blog.js';
 import Contact from './contact.js';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import {LinkContainer} from 'react-router-bootstrap';
 
 class NavigationBar extends React.Component {
   render() {
