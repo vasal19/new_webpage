@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Navbar, Nav, NavItem} from 'react-bootstrap';
+import {Navbar, Nav, NavItem, Grid, Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.css';
 import Home from './home.js';
@@ -49,13 +49,19 @@ class Page extends React.Component {
   render() {
     return (
       <Router>
-        <div>
-          <NavigationBar onClick={(index)=>{this.onPageChange(index)}}/>
-              <Route exact path="/" component={Home} />
-              <Route path="/about" component={About}/>
-              <Route path="/events" component={Events}/>
-              <Route path="/blog" component={Blog}/>
-              <Route path="/contact" component={Contact}/>
+          <div>
+            <NavigationBar onClick={(index)=>{this.onPageChange(index)}}/>
+              <Grid bsStyle="container" fluid={true}>
+                <Row>
+                <Col md={12}>
+                <Route exact path="/" component={Home} />
+                <Route path="/about" component={About}/>
+                <Route path="/events" component={Events}/>
+                <Route path="/blog" component={Blog}/>
+                <Route path="/contact" component={Contact}/>
+              </Col>
+            </Row>
+          </Grid>
         </div>
       </Router>
     );
