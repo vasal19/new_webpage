@@ -1,3 +1,68 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #464646;
+}
+
+@media screen and (max-width: 480px) {
+    .home_main_panel {
+        margin-top: 130px;
+    }
+
+    .bottom {
+      position: static;
+      bottom: -130px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .bottom {
+      position: absolute;
+      bottom: 0px;
+    }
+}
+
 a {
   outline: 0;
+}
+
+.home_main_panel {
+  height: 550px;
+  position: relative;
+  /* overflow-x: visible; */
+}
+
+.page-header {
+  background-color: white;
+}
+
+.smallEvent {
+  margin-top: 7px;
+}
+
+.smallEvent:hover {
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.transparent {
+  opacity: 1;
+  /*background-color: transparent; */
+
+}
+
+.ridgeBordered {
+  border: ridge;
+  padding: 10px;
 }

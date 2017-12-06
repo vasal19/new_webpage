@@ -46,6 +46,19 @@ class NavigationBar extends React.Component {
 }
 
 class Page extends React.Component {
+
+  changeBackground(type, source) {
+    if (type === 'image' || type === 'img')
+      document.body.style.backgroundImage = 'url(' + source + ')';
+    else {
+      if (type === 'color' || type === 'colour')
+        document.body.style.backgroundColor = source ? source : 'white';
+      else
+        document.body.style.backgroundColor = 'white';
+      document.body.style.backgroundImage = 'None';
+    }
+  }
+
   render() {
     return (
       <Router>
@@ -54,7 +67,9 @@ class Page extends React.Component {
               <Grid bsStyle="container" fluid={true}>
                 <Row>
                 <Col md={12}>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/" component={
+                  () => <Home changeBackground={this.changeBackground} />
+                }/>
                 <Route path="/about" component={About}/>
                 <Route path="/events" component={Events}/>
                 <Route path="/blog" component={Blog}/>
