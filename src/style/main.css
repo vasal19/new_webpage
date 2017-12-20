@@ -10,6 +10,7 @@ body {
   background-attachment: fixed;
   background-color: #393939;
   color: #f4f4f4;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (max-width: 480px) {
@@ -30,6 +31,12 @@ body {
     }
 }
 
+@media screen and (min-width: 1000px) {
+  .topSpacer {
+    margin-top: 30px;
+  }
+}
+
 a {
   outline: 0;
 }
@@ -40,6 +47,10 @@ a {
 
 .rightPadding li {
   margin-right: 20px;
+}
+
+.topSpacer {
+  margin-top: 30px;
 }
 
 .home_main_panel {
@@ -73,5 +84,15 @@ a {
 
 .ridgeBordered {
   border: ridge;
+  padding: 10px;
+}
+
+.somePadding {
+  padding: 5px;
+}
+
+
+.bulletlessList {
+  list-style-type: none;
   padding: 10px;
 }
