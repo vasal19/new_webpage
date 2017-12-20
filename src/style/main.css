@@ -34,6 +34,14 @@ a {
   outline: 0;
 }
 
+.rightPadding {
+  margin-right: 80px;
+}
+
+.rightPadding li {
+  margin-right: 20px;
+}
+
 .home_main_panel {
   height: 550px;
   position: relative;

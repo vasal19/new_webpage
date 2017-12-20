@@ -22,7 +22,7 @@ class NavigationBar extends React.Component {
           <Navbar.Toggle />
         </Navbar.Header>
           <Navbar.Collapse>
-            <Nav>
+            <Nav pullRight className="rightPadding">
               <LinkContainer exact to="/">
                 <NavItem > Home  </NavItem>
               </LinkContainer>
