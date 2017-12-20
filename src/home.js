@@ -95,7 +95,7 @@ export default class Home extends React.Component {
   }
 
   componentWillUnmount() {
-    this.props.changeBackground("color", "white");
+      this.props.changeBackground("img", "None");
   }
 
   render() {
