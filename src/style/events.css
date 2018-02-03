@@ -1,0 +1,38 @@
+#main-content{
+	color: #f4f4f4;
+}
+
+.eventPanel{
+	border: 1px solid black;
+	background-color: #666464;
+
+}
+
+.eventPanel:hover{
+ 	cursor: pointer;
+ 	background-color: #393939;
+ }
+
+.eventHeader  {
+	vertical-align: middle;
+}
+
+.eventDate {
+	border-right: 1px solid black;
+	font-size: 20px;
+	text-align: center;
+}
+
+.eventTitle{
+	font-size:x-large;
+	height: 100%;
+	margin-top: 10px;
+}
+
+.eventNameInfo {
+	padding: 5px;
+}
+
+.eventNameInfo span{
+	font-size: 30px;
+}

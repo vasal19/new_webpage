@@ -9,7 +9,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-color: #393939;
-  color: #f4f4f4;
+  color: #f4f4f4; 
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -85,6 +85,10 @@ a {
 .ridgeBordered {
   border: ridge;
   padding: 10px;
+}
+
+.testBordered {
+  border: 1px daashed blue;
 }
 
 .somePadding {
