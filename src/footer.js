@@ -47,7 +47,6 @@ export default class Footer extends React.Component{
   render() {
     return (
       <div className="footer">
-        <Router>
         <div className="bottom-nav">
             <Link to="/">
               <MenuBar item="Home" />
@@ -65,19 +64,30 @@ export default class Footer extends React.Component{
               <MenuBar item="Contact" />
             </Link>
         </div>
-        </Router>
-        <Router>
-          <div>
-            <SocialLinks name="facebook-square" size="2x"/>
-            <SocialLinks name="twitter-square" size="2x"/>
-            <SocialLinks name="instagram" size="2x"/>
-            <SocialLinks name="youtube" size="2x"/>
-          </div>
-        </Router>
+        <div>
+        <a href="https://www.facebook.com/ieeeteithe/" target="_blank" rel="noopener noreferrer">
+          <SocialLinks name="facebook-square" size="2x"/>
+        </a>
+        <a href="https://twitter.com/ieeeteithe" target="_blank" rel="noopener noreferrer">
+          <SocialLinks name="twitter-square" size="2x"/>
+        </a>
+        <a href="https://instagram.com/ieeeteithe/" target="_blank" rel="noopener noreferrer">
+          <SocialLinks name="instagram" size="2x"/>
+        </a>
+        <a href="https://www.youtube.com/channel/UCmzjQYFb33sHrWKVWv-VW0A" target="_blank" rel="noopener noreferrer">
+          <SocialLinks name="youtube" size="2x"/>
+        </a>
+        </div>
         <div className="logos">
-          <Logo source={ieee} alt="IEEE Logo"/>
-          <Logo source={ieeeExplore} alt="IEEE Explore Logo"/>
-          <Logo source={ieeeSpectrum} alt="IEEE Spectrum Logo"/>
+          <a href="http://www.ieee.org/index.html" target="_blank" rel="noopener noreferrer">
+            <Logo source={ieee} alt="IEEE Logo"/>
+          </a>
+          <a href="http://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank" rel="noopener noreferrer">
+            <Logo source={ieeeExplore} alt="IEEE Explore Logo"/>
+          </a>
+          <a href="http://spectrum.ieee.org/" target="_blank" rel="noopener noreferrer">
+            <Logo source={ieeeSpectrum} alt="IEEE Spectrum Logo"/>
+          </a>
         </div>
         <Copyright />
       </div>

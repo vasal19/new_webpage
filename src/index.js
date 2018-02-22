@@ -86,9 +86,9 @@ class Page extends React.Component {
               </Col>
             </Row>
           </Grid>
+          <Footer />
         </div>
       </Router>
-      <Footer />
       </div>
     );
   }
